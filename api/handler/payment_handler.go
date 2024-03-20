@@ -105,7 +105,7 @@ func (h *PaymentHandler) DoPay(c *gin.Context) {
 			TotalFee:     fmt.Sprintf("%f", order.Amount),
 			Title:        order.Subject,
 			NotifyURL:    h.App.Config.HuPiPayConfig.NotifyURL,
-			WapName:      "极客学长",
+			WapName:      "水梦泽",
 		}
 		r, err := h.huPiPayService.Pay(params)
 		if err != nil {
